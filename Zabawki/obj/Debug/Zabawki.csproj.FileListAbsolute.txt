@@ -1,0 +1,11 @@
+c:\users\dotnet-9\documents\visual studio 2015\Projects\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+C:\Users\Michał\source\repos\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+C:\Users\Michał\source\repos\Zabawki\Zabawki\bin\Debug\Zabawki.exe
+C:\Users\Michał\source\repos\Zabawki\Zabawki\bin\Debug\Zabawki.pdb
+C:\Users\Michał\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csprojAssemblyReference.cache
+C:\Users\Michał\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.Form1.resources
+C:\Users\Michał\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.Properties.Resources.resources
+C:\Users\Michał\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.GenerateResource.cache
+C:\Users\Michał\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.CoreCompileInputs.cache
+C:\Users\Michał\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.exe
+C:\Users\Michał\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.pdb
