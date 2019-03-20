@@ -9,7 +9,7 @@ namespace Zabawki
     class Car : IAccelerate
     {
        
-        int acc = 0;
+        int acc = 5;
         static int id = 1;
         private string nameOf; 
 
@@ -45,6 +45,9 @@ namespace Zabawki
             }
             return acc;
         }
-
+        public int getAcc()
+        {
+            return this.acc;
+        }
     }
 }

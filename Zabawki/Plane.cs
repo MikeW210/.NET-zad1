@@ -11,7 +11,7 @@ namespace Zabawki
 
         
       
-        int height = 0;
+        int height = 200;
         static int id = 1;
         private string nameOf;
 
@@ -41,6 +41,15 @@ namespace Zabawki
             }
             return height;
         }
-    
+        public override string ToString()
+        {
+            return nameOf;
+           
+        }
+
+        public int getRise()
+        {
+            return this.height;
+        }
     }
 }

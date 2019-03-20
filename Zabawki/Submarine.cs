@@ -10,7 +10,7 @@ namespace Zabawki
     {
 
         
-        int speed = 0;
+        int speed = 50;
         
         static int id = 1;
         private string nameOf;
@@ -39,6 +39,15 @@ namespace Zabawki
             }
 
             return speed;
+        }
+        public override string ToString()
+        {
+            return nameOf;
+        }
+
+        public int getSpeed()
+        {
+            return this.speed;
         }
 
     }

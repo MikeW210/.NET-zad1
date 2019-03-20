@@ -10,5 +10,6 @@ namespace Zabawki
     {
         int Higher();
         int Lower();
+        int getRise();
     }
 }
