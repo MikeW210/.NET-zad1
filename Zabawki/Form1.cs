@@ -19,7 +19,11 @@ namespace Zabawki
         
         public Form1()
         {
+            
             InitializeComponent();
+            speedBox.Enabled = false;
+            riseBox.Enabled = false;
+            accBox.Enabled = false;
         }
 
         // submarine faster
@@ -152,8 +156,8 @@ namespace Zabawki
 
         private void speedBox_Enter(object sender, EventArgs e)
         {
-            
-            
+        
+
         }
         //wybrane z drugiej listy
         private void listOfAdded_SelectedIndexChanged(object sender, EventArgs e)

@@ -28,3 +28,13 @@ C:\Users\Michał\Desktop\Zabawki\obj\Debug\Zabawki.csproj.GenerateResource.cache
 C:\Users\Michał\Desktop\Zabawki\obj\Debug\Zabawki.csproj.CoreCompileInputs.cache
 C:\Users\Michał\Desktop\Zabawki\obj\Debug\Zabawki.exe
 C:\Users\Michał\Desktop\Zabawki\obj\Debug\Zabawki.pdb
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\bin\Debug\Zabawki.exe.config
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\bin\Debug\Zabawki.exe
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\bin\Debug\Zabawki.pdb
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\obj\Debug\Zabawki.csprojAssemblyReference.cache
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\obj\Debug\Zabawki.Form1.resources
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\obj\Debug\Zabawki.Properties.Resources.resources
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\obj\Debug\Zabawki.csproj.GenerateResource.cache
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\obj\Debug\Zabawki.csproj.CoreCompileInputs.cache
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\obj\Debug\Zabawki.exe
+C:\Users\Michał\Desktop\NET-zad1-master\.NET-zad1-master\Zabawki\obj\Debug\Zabawki.pdb
