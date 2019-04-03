@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Zabawki
 {
-    class Car : IAccelerate
+    class Car : IAccelerate,ISpeed
     {
        
         int acc = 5;
+        int speed = 50;
         static int id = 1;
         private string nameOf; 
 
@@ -48,6 +49,21 @@ namespace Zabawki
         public int getAcc()
         {
             return this.acc;
+        }
+
+        public int Faster()
+        {
+            return speed++;
+        }
+
+        public int Slower()
+        {
+            return speed--;
+        }
+
+        public int getSpeed()
+        {
+            return this.speed;
         }
     }
 }

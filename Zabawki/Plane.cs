@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Zabawki
 {
-    class Plane :  IHeight
+    class Plane :  IHeight,IAccelerate
     {
 
-        
-      
+
+        int acc = 500;
         int height = 200;
         static int id = 1;
         private string nameOf;
@@ -29,16 +29,18 @@ namespace Zabawki
 
         public int Higher()
         {
-           return height++;
-        }
-
-        public int Lower()
-        {
-            height--;
             if (height <= 0)
             {
                 height = 0;
             }
+            return height--;
+            
+        }
+
+        public int Lower()
+        {
+            height++;
+           
             return height;
         }
         public override string ToString()
@@ -50,6 +52,21 @@ namespace Zabawki
         public int getRise()
         {
             return this.height;
+        }
+
+        public int Przyspiesz()
+        {
+            return acc++;
+        }
+
+        public int Zwolnij()
+        {
+            return acc--;
+        }
+
+        public int getAcc()
+        {
+            return this.acc;
         }
     }
 }

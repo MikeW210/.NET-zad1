@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Zabawki
 {
-    class Submarine : ISpeed
+    class Submarine : ISpeed,IHeight
     {
 
         
         int speed = 50;
+        int depth = 100;
         
         static int id = 1;
         private string nameOf;
@@ -50,5 +51,19 @@ namespace Zabawki
             return this.speed;
         }
 
-    }
+        public int Higher()
+        {
+            return depth--;
+        }
+
+        public int Lower()
+        {
+            return depth++;
+        }
+
+        public int getRise()
+        {
+            return this.depth;
+        }
+      }
 }

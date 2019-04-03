@@ -29,30 +29,35 @@ namespace Zabawki
         // submarine faster
         private void button1_Click(object sender, EventArgs e)
         {
-            if (listOfAdded.Text == "")
+            if (listOfAdded.SelectedItem is IAccelerate)
             {
-                return;
+                IAccelerate car = (IAccelerate)listOfAdded.SelectedItem;
+                speed.Text = car.Przyspiesz().ToString();
+
             }
             else
             {
-                Car tmp = (Car) listOfAdded.SelectedItem;
+                return;
+               /* Car tmp = (Car) listOfAdded.SelectedItem;
                 tmp.Przyspiesz();
-                speed.Text = tmp.getAcc().ToString();
+                speed.Text = tmp.getAcc().ToString();*/
                
             }
         }
         //submarine slower
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listOfAdded.Text == "")
+            if (listOfAdded.SelectedItem is IAccelerate)
             {
-                return;
+                IAccelerate car = (IAccelerate)listOfAdded.SelectedItem;
+                speed.Text = car.Zwolnij().ToString();
             }
             else
             {
-                Car tmp = (Car)listOfAdded.SelectedItem;
+                return;
+               /* Car tmp = (Car)listOfAdded.SelectedItem;
                 tmp.Zwolnij();
-                speed.Text = tmp.getAcc().ToString();
+                speed.Text = tmp.getAcc().ToString();*/
 
                 
             }
@@ -61,58 +66,66 @@ namespace Zabawki
         //car szybciej
         private void button5_Click(object sender, EventArgs e)
         {
-                if (listOfAdded.Text == "")
+                if (listOfAdded.SelectedItem is ISpeed)
                 {
-                    return;
-                }
+                ISpeed sub = (ISpeed)listOfAdded.SelectedItem;
+                acc.Text = sub.Faster().ToString();
+            }
                 else
                 {
-                    Submarine tmp = (Submarine)listOfAdded.SelectedItem;
+                return;
+                   /* Submarine tmp = (Submarine)listOfAdded.SelectedItem;
                     tmp.Faster();
-                    acc.Text = tmp.getSpeed().ToString();
+                    acc.Text = tmp.getSpeed().ToString();*/
             }
 
         }
         //car wolniej
         private void button6_Click(object sender, EventArgs e)
         {
-                    if (listOfAdded.Text == "")
+                    if (listOfAdded.SelectedItem is ISpeed)
                     {
-                        return;
-                    }
+                        ISpeed sub = (ISpeed)listOfAdded.SelectedItem;
+                        acc.Text = sub.Slower().ToString();
+                     }
                     else
                     {
-                    Submarine tmp = (Submarine)listOfAdded.SelectedItem;
+                return;
+                    /*Submarine tmp = (Submarine)listOfAdded.SelectedItem;
                     tmp.Slower();
-                    acc.Text = tmp.getSpeed().ToString();
+                    acc.Text = tmp.getSpeed().ToString();*/
              }
         }
         //plane wysokosc
         private void button3_Click(object sender, EventArgs e)
         {
-                        if (listOfAdded.Text == "")
+                        if (listOfAdded.SelectedItem is IHeight)
                         {
-                            return;
-                        }
+                IHeight plane = (IHeight)listOfAdded.SelectedItem;
+                depth.Text = plane.Lower().ToString();
+            }
                         else
                         {
-                        Plane tmp = (Plane)listOfAdded.SelectedItem;
+                return;
+                       /* Plane tmp = (Plane)listOfAdded.SelectedItem;
                         tmp.Higher();
-                        depth.Text = tmp.getRise().ToString();
+                        depth.Text = tmp.getRise().ToString();*/
             }
         }
         //plane niskosc
         private void button4_Click(object sender, EventArgs e)
         {
-                            if (listOfAdded.Text == "")
+                            if (listOfAdded.SelectedItem is IHeight)
                             {
-                                return;
-                            }
+                IHeight plane = (IHeight)listOfAdded.SelectedItem;
+                depth.Text = plane.Higher().ToString();
+            }
                             else
                             {
-                                Plane tmp = (Plane)listOfAdded.SelectedItem;
+                return;
+                              /*  Plane tmp = (Plane)listOfAdded.SelectedItem;
                                 tmp.Lower();
-                                depth.Text = tmp.getRise().ToString();
+                                depth.Text = tmp.getRise().ToString();*/
             }
         }
 
@@ -154,17 +167,13 @@ namespace Zabawki
        
       
 
-        private void speedBox_Enter(object sender, EventArgs e)
-        {
-        
-
-        }
         //wybrane z drugiej listy
         private void listOfAdded_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listOfAdded.SelectedItem is IAccelerate)
             {
                 speedBox.Enabled = true;
+                speed.Text = ((IAccelerate) listOfAdded.SelectedItem).getAcc().ToString();
             }
             else
             {
@@ -175,6 +184,7 @@ namespace Zabawki
             if (listOfAdded.SelectedItem is ISpeed)
             {
                 accBox.Enabled = true;    
+                acc.Text = ((ISpeed)listOfAdded.SelectedItem).getSpeed().ToString();
             }
             else
             {
@@ -185,6 +195,7 @@ namespace Zabawki
             if (listOfAdded.SelectedItem is IHeight)
             {
                 riseBox.Enabled = true;
+                depth.Text = ((IHeight)listOfAdded.SelectedItem).getRise().ToString();
             }
             else
             {
@@ -192,75 +203,7 @@ namespace Zabawki
                 depth.Clear();
             }
 
-            if (listOfAdded.SelectedItem as Car != null)
-            {
-                speed.Text = ((Car) listOfAdded.SelectedItem).getAcc().ToString();
-                acc.Clear();
-                depth.Clear();
-            }
-
-            if (listOfAdded.SelectedItem as Submarine != null)
-            {
-                speed.Clear();
-                acc.Text = ((Submarine)listOfAdded.SelectedItem).getSpeed().ToString();
-                depth.Clear();
-
-            }
-            if (listOfAdded.SelectedItem as Plane != null)
-            {
-                speed.Clear();
-                acc.Clear();
-                depth.Text = ((Plane)listOfAdded.SelectedItem).getRise().ToString();
-            }
-
-            if (listOfAdded.SelectedItem as Computer != null)
-            {
-                speed.Clear();
-                acc.Clear();
-                depth.Clear();
-            }
-
-
-            /* if (listOfAdded.SelectedItem as Computer != null)
-             {
-                 speedBox.Enabled = false;
-                 accBox.Enabled = false;
-                 riseBox.Enabled = false;
-
-
-
-
-             }
-             if (listOfAdded.Text.Contains("Car"))
-             {
-
-                 speedBox.Enabled = false;
-                 accBox.Enabled = true;
-                 riseBox.Enabled = false;
-
-
-
-
-             }
-             if (listOfAdded.Text.Contains("Submarine"))
-             {
-                 speedBox.Enabled = true;
-                 accBox.Enabled = false;
-                 riseBox.Enabled = false;
-
-
-
-             }
-             if (listOfAdded.Text.Contains("Plane"))
-             {
-                 speedBox.Enabled = false;
-                 accBox.Enabled = false;
-                 riseBox.Enabled = true;
-
-
-
-             }
-             */
+           
         }
 
         private void button7_Click(object sender, EventArgs e)

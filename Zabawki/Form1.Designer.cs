@@ -95,7 +95,7 @@
             this.speedBox.TabIndex = 3;
             this.speedBox.TabStop = false;
             this.speedBox.Text = "Speed";
-            this.speedBox.Enter += new System.EventHandler(this.speedBox_Enter);
+          
             // 
             // speed
             // 
